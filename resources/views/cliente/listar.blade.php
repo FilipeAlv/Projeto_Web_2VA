@@ -28,7 +28,7 @@
 						    <td>{{ $cliente->cidade }}</td>				   
 						    <td>{{ $cliente->estado }}</td>
 						    <td>
-						    	<a href=""><img width="25" src="{{ asset('images/editar.png') }}" /></a>
+						    	<a href="{{ route('cliente.editar', $cliente->id) }}"><img width="25" src="{{ asset('images/editar.png') }}" /></a>
 
 						    	<a href="{{ route('cliente.deletar', $cliente->id) }}"><img width="30" src="{{ asset('images/excluir.png') }}" /></a>
 						    </td>

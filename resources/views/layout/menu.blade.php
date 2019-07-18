@@ -24,8 +24,8 @@
           Pets
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Listar</a>
-          <a class="dropdown-item" href="#">Cadastrar</a>
+          <a class="dropdown-item" href="{{ route('pet.index') }}">Listar</a>
+          <a class="dropdown-item" href="{{ route('pet.cadastrar') }}">Cadastrar</a>
         </div>
       </li>
 
@@ -34,8 +34,8 @@
           Produtos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Listar</a>
-          <a class="dropdown-item" href="#">Cadastrar</a>
+          <a class="dropdown-item" href="{{ route('produto.index') }}">Listar</a>
+          <a class="dropdown-item" href="{{ route('produto.cadastrar') }}">Cadastrar</a>
         </div>
       </li>
 

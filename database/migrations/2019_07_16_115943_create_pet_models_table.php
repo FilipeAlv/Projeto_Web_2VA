@@ -15,6 +15,17 @@ class CreatePetModelsTable extends Migration
     {
         Schema::create('pet_models', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('nome');
+            $table->date('dataNascimento');
+            $table->string('especie');
+            $table->string('raca');
+
+            $table->unsignedBigInteger('id_dono');
+            
+            $table->foreign('id_dono')
+                ->references('id')->on('cliente_models')
+                ->onDelete('cascade');
+
             $table->timestamps();
         });
     }
