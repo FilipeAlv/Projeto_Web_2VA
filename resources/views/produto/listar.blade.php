@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section('title', 'Lista de Produtos')
 @section('content')
 <div class="content">
@@ -38,6 +38,7 @@
 				    @endforeach
 			  </tbody>
 			</table>
+		</div>
 	</div>
 </div>
 @endsection

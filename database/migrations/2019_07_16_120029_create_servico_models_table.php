@@ -15,6 +15,8 @@ class CreateServicoModelsTable extends Migration
     {
         Schema::create('servico_models', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('nome');
+            $table->double('valor');
             $table->timestamps();
         });
     }

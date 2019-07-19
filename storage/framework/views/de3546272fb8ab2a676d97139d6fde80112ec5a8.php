@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?php echo e(route('home')); ?>">Home <span class="sr-only">(current)</span></a>
       </li>
 
       <li class="nav-item dropdown">
@@ -14,8 +14,8 @@
           Clientes
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="{{ route('cliente.index') }}">Listar</a>
-          <a class="dropdown-item" href="{{ route('cliente.cadastrar') }}">Cadastrar</a>
+          <a class="dropdown-item" href="<?php echo e(route('cliente.index')); ?>">Listar</a>
+          <a class="dropdown-item" href="<?php echo e(route('cliente.cadastrar')); ?>">Cadastrar</a>
         </div>
       </li>
 
@@ -24,8 +24,8 @@
           Pets
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="{{ route('pet.index') }}">Listar</a>
-          <a class="dropdown-item" href="{{ route('pet.cadastrar') }}">Cadastrar</a>
+          <a class="dropdown-item" href="<?php echo e(route('pet.index')); ?>">Listar</a>
+          <a class="dropdown-item" href="<?php echo e(route('pet.cadastrar')); ?>">Cadastrar</a>
         </div>
       </li>
 
@@ -34,8 +34,8 @@
           Produtos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="{{ route('produto.index') }}">Listar</a>
-          <a class="dropdown-item" href="{{ route('produto.cadastrar') }}">Cadastrar</a>
+          <a class="dropdown-item" href="<?php echo e(route('produto.index')); ?>">Listar</a>
+          <a class="dropdown-item" href="<?php echo e(route('produto.cadastrar')); ?>">Cadastrar</a>
         </div>
       </li>
 
@@ -44,11 +44,26 @@
           Serviços
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Listar</a>
-          <a class="dropdown-item" href="#">Cadastrar</a>
+          <a class="dropdown-item" href="<?php echo e(route('servico.index')); ?>">Listar</a>
+          <a class="dropdown-item" href="<?php echo e(route('servico.cadastrar')); ?>">Cadastrar</a>
         </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Usuário
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="<?php echo e(route('usuario.index')); ?>">Listar</a>
+          <a class="dropdown-item" href="<?php echo e(route('usuario.cadastrar')); ?>">Cadastrar</a>
+        </div>
+      </li>
+
+
+       <li class="nav-item active float-right">
+        <a class="nav-link" href="<?php echo e(route('logout')); ?>"> Sair </a>
       </li>
 
     </ul>
   </div>
-</nav>
+</nav><?php /**PATH C:\Users\vb\Desktop\Nova pasta\Projeto_Web_2VA\resources\views/layouts/menu.blade.php ENDPATH**/ ?>
